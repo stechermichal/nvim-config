@@ -130,4 +130,6 @@ telescope.setup {
       },
     },
   },
- 
+
+# Treesitter
+- Set up for all languages right now, added rainbow brackets and playground
