@@ -180,4 +180,4 @@ local opts = {
   },
 }
 
-return opts-- Find more schemas here: https://www.schemastore.org/json/
+return opts
