@@ -30,7 +30,7 @@
 - To persist do yhou can use "colorscheme darkblue" but that will break if the theme plugin isn't installed. A bette way is to require colorscheme.lua and define it at the top 
 - I put specific scheme config into colorscheme.lua, loading it into init.lua and at the top of the file.
 
-# Completion
+# Completiokn
 - via cpm
 - close tab menu with Control + E
 - Move through menu with C+j or C+k
@@ -38,3 +38,12 @@
 - C+Space to open menu anytime
 - consider adding cmp git and cmp npm, do that by simply adding it to the cmp plugins section in plugins.lua. Also add to sources in cmp lua. Also add to sources in cmp lua
 
+# LSP
+- handlers.lua handles the keymaps
+- gl shows line diagnostics
+- gd jumps to a function over which we are hovering
+- shift + k will hover over something and give us a blurb
+- Schema store if we need lsp to work with more files
+- If you need to modify a schema to maake it less strict, check nvim lspconfig repo and go to server configurations.
+  - add a new if bloc in lsp-installer.lua
+  - add a new file in settings, such as pyright.lua
