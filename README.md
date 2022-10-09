@@ -22,3 +22,9 @@
     - Blow it away if shit is broken perhaps, maybe put in gitignore.
   - Extremely important/useful is pinning plugin to a specific commit when we notice that a plugin is broken but used to not be in a previous commit. [via commit, see packer docs]
  
+
+# Colorscheme
+- Set termguicolors = true in options to get more color options - This changes a lot of stuff, such as highlight not being just underline but a whole line highlight etc. Most terminals support this and if yours doesn't you should figure that out rather than leaving color off
+- vim.cmd "colorscheme darkblue" in init.lua to ma:vske colorscheme persist.
+- Add themes easily the same way you would add plugins
+- To persist do yhou can use "colorscheme darkblue" but that will break if the theme plugin isn't installed. A bette way is to require colorscheme.lua and define it at the top 

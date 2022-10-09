@@ -47,6 +47,11 @@ return packer.startup(function(use)
   use {"tpope/vim-dispatch", opt = true, cmd = {"Dispatch", "Make", "Focus", "Start"}} -- This goes into the opt directory and doesn't run on its own, it will run once called with one of the specified comments. This is called lazy loading
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'} -- This run a post install/update hook needed because the plugin uses some JS. It provides MD preview
 
+  -- Colorschemes
+  use "lunarvim/colorschemes" -- Several lunarvim themes
+  use "folke/tokyonight.nvim" -- Tokyo
+  use "catppuccin/nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
