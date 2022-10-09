@@ -19,7 +19,7 @@
   - PackerStatus shows installed
   - PackerSync updates and compiles
   - We don't care what happens in packer_compiled, it will just get compiled again if you delete it
-    - Blow it away if shit is broken perhaps, maybe put in gitignore.
+    - Blow it away if stuff is broken perhaps, maybe put in gitignore.
   - Extremely important/useful is pinning plugin to a specific commit when we notice that a plugin is broken but used to not be in a previous commit. [via commit, see packer docs]
  
 
@@ -29,3 +29,12 @@
 - Add themes easily the same way you would add plugins
 - To persist do yhou can use "colorscheme darkblue" but that will break if the theme plugin isn't installed. A bette way is to require colorscheme.lua and define it at the top 
 - I put specific scheme config into colorscheme.lua, loading it into init.lua and at the top of the file.
+
+# Completion
+- via cpm
+- close tab menu with Control + E
+- Move through menu with C+j or C+k
+- Scroll through the open completion window with C+b or f 
+- C+Space to open menu anytime
+- consider adding cmp git and cmp npm, do that by simply adding it to the cmp plugins section in plugins.lua. Also add to sources in cmp lua. Also add to sources in cmp lua
+
