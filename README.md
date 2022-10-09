@@ -28,3 +28,4 @@
 - vim.cmd "colorscheme darkblue" in init.lua to ma:vske colorscheme persist.
 - Add themes easily the same way you would add plugins
 - To persist do yhou can use "colorscheme darkblue" but that will break if the theme plugin isn't installed. A bette way is to require colorscheme.lua and define it at the top 
+- I put specific scheme config into colorscheme.lua, loading it into init.lua and at the top of the file.
