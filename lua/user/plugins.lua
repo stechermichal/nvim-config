@@ -48,6 +48,8 @@ return packer.startup(function(use)
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'} -- This run a post install/update hook needed because the plugin uses some JS. It provides MD preview
   use "windwp/nvim-autopairs" -- Autopaits, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim" -- Easily comment stuff
+  use "kyazdani42/nvim-web-devicons"
+  use "kyazdani42/nvim-tree.lua"
 
   -- Colorschemes
   use "lunarvim/colorschemes" -- Several lunarvim themes
