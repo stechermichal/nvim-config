@@ -156,3 +156,5 @@ telescope.setup {
 - 'l' 'cr' and 'o' all open file
 - 'h' will close node/directory, similar to what <cr> would do
 
+# Bufferline
+- 
