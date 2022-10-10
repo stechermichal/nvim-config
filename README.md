@@ -157,4 +157,8 @@ telescope.setup {
 - 'h' will close node/directory, similar to what <cr> would do
 
 # Bufferline
-- 
+- Shift + l/h moves between buffers, which can be combined with the previous mapping of jumping between windows with ctrl + l/h  
+- Alternatively use BufferLinePick to get letter selection for specific buffers
+- Note that when making a new window with :vs the new window will have the exact same buffers - and you can select a different buffer inside that window.
+- Tabs are a bit different, they are a collections of windows in them. Can be made with tabnew and bound to something, I think tabs are unnecessary.
+- :Bdelete as opposed to :bdelete to never close nvim completely when closing buffers
