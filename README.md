@@ -141,3 +141,8 @@ telescope.setup {
 - gcc to comment out one line
 - gc on selected to comment out a selected bloc
 
+# Gitsigns
+- :Gitsigns prev_hunk
+- :Gitsigns previous_hunk - when at  changes, shows those
+- :Gitsigns blame_line - shows blame + message
+
