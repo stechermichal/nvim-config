@@ -133,3 +133,11 @@ telescope.setup {
 
 # Treesitter
 - Set up for all languages right now, added rainbow brackets and playground
+
+# Autopairs
+- Fast wrap - do opening parentheses into alt + e to get options of where to put brackets
+
+# Commenting
+- gcc to comment out one line
+- gc on selected to comment out a selected bloc
+

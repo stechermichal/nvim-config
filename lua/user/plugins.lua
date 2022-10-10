@@ -46,6 +46,8 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins - not optional, required by most other plugins
   use {"tpope/vim-dispatch", opt = true, cmd = {"Dispatch", "Make", "Focus", "Start"}} -- This goes into the opt directory and doesn't run on its own, it will run once called with one of the specified comments. This is called lazy loading
   use {'iamcco/markdown-preview.nvim', run = 'cd app && yarn install', cmd = 'MarkdownPreview'} -- This run a post install/update hook needed because the plugin uses some JS. It provides MD preview
+  use "windwp/nvim-autopairs" -- Autopaits, integrates with both cmp and treesitter
+  use "numToStr/Comment.nvim" -- Easily comment stuff
 
   -- Colorschemes
   use "lunarvim/colorschemes" -- Several lunarvim themes
@@ -80,7 +82,10 @@ return packer.startup(function(use)
   }
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground"
+  use "JoosepAlviste/nvim-ts-context-commentstring"
 
+  -- Git
+  use "lewis6991/gitsigns.nvim"
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
