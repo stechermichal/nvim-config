@@ -137,7 +137,7 @@ telescope.setup {
 # Autopairs
 - Fast wrap - do opening parentheses into alt + e to get options of where to put brackets
 
-# Commenting
+# Commenting 
 - gcc to comment out one line
 - gc on selected to comment out a selected bloc
 
@@ -145,4 +145,14 @@ telescope.setup {
 - :Gitsigns prev_hunk
 - :Gitsigns previous_hunk - when at  changes, shows those
 - :Gitsigns blame_line - shows blame + message
+
+# Nvim-tree
+- leader + e opens nvimtree by calling :nvimtreeToggle
+- 'a' to create a file
+- 'r' to rename a file
+- 'd' and 'y' to delete and confirm
+- it WILL change your current working directory when moving to a file in that directory from another directory!
+- 'v' when hovering over a file to call :vs on it and split it to the side
+- 'l' 'cr' and 'o' all open file
+- 'h' will close node/directory, similar to what <cr> would do
 
