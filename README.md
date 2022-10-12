@@ -194,4 +194,4 @@ end`
 - Improved startup time
 
 # Indent blankline
-- Gray line showing indetations
+- Rainbow lines showing indetations
