@@ -189,3 +189,6 @@ end`
 
 # Projects
 - :Telescope projects
+
+# Impatient
+- Improved startup time

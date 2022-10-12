@@ -55,6 +55,7 @@ return packer.startup(function(use)
   use "nvim-lualine/lualine.nvim"
   use "akinsho/toggleterm.nvim"
   use "ahmedkhalf/project.nvim"
+  use "lewis6991/impatient.nvim"
 
   -- Colorschemes
   use "lunarvim/colorschemes" -- Several lunarvim themes
