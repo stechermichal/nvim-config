@@ -1,5 +1,4 @@
  nvim-config
- 
  # keymaps, other non-stock behavior
 
 - Use C + <directional key> instead of CR + W + <directional key> to change windows.
@@ -183,3 +182,7 @@ end`
 # Lualine
 
 # Toggleterm
+- C + \ to open terminal. Do not rebind to a leader key, it doesn't work too well.
+- Direction in toggleterm.lua can be changed to horizontal for a more of a vscode experience. Or a tab/vertical
+- :lua _NODE_TOGGLE() to toggle node
+- :lua _LAZYGIT_TOGGLE() to toggle lazygit
