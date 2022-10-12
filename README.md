@@ -179,3 +179,7 @@ telescope.setup {
 end`
 - Use `:Format` to run 'lua vim.lsp.buf.format{async=true}' from handlers.lua
 - leader s to format, as in format on save 
+
+# Lualine
+
+# Toggleterm
