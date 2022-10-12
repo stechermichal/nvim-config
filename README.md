@@ -185,4 +185,7 @@ end`
 - C + \ to open terminal. Do not rebind to a leader key, it doesn't work too well.
 - Direction in toggleterm.lua can be changed to horizontal for a more of a vscode experience. Or a tab/vertical
 - :lua _NODE_TOGGLE() to toggle node
-- :lua _LAZYGIT_TOGGLE() to toggle lazygit
+- :lua _LAZYGIT_TOGGLE() to toggle lazygit --Currently better to use outside of vim as somehow vim motions still work which screws up lazygit commands. 
+
+# Projects
+- :Telescope projects
