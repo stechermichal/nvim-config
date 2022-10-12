@@ -39,8 +39,8 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
--- Close buffer with vim bbye, but it doesn't work
--- keymap("n", "<leader>b", ":Bdelete<CR>", opts)
+-- Close buffer with vim bbye
+keymap("n", "<leader>b", ":Bdelete<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
@@ -76,4 +76,5 @@ keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts )
+keymap("n", "<leader>s", ":Format<cr>", opts)

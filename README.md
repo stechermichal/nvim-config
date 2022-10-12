@@ -162,3 +162,20 @@ telescope.setup {
 - Note that when making a new window with :vs the new window will have the exact same buffers - and you can select a different buffer inside that window.
 - Tabs are a bit different, they are a collections of windows in them. Can be made with tabnew and bound to something, I think tabs are unnecessary.
 - :Bdelete as opposed to :bdelete to never close nvim completely when closing buffers
+- leader b to bdelete
+
+# null-ls
+- This sort of uses what's build into the LSP rather than using their own, which is better to unify things
+- If you get asked which server you want to use, it means probably both the orignal lsp one and your added null ls one is added. 
+- That can be fixed by finding out which one is it with LsPInfo to show current active language server. And for example tsserver provides both diagnostics and formatting and makes us choose each time. The code below makes it so that it always uses null-ls for that.
+`M.on_attach = function(client, bufnr)
+	-- vim.notify(client.name .. " starting...")
+	-- TODO: refactor this into a method that checks if string in list
+	if client.name == "tsserver" then
+		client.server_capabilities.documentFormattingProvider = false
+	end
+	lsp_keymaps(bufnr)
+	lsp_highlight_document(client)
+end`
+- Use `:Format` to run 'lua vim.lsp.buf.format{async=true}' from handlers.lua
+- leader s to format, as in format on save 
