@@ -195,3 +195,6 @@ end`
 
 # Indent blankline
 - Rainbow lines showing indetations
+
+# alpha
+- Greeter
