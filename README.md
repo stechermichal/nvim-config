@@ -198,3 +198,8 @@ end`
 
 # alpha
 - Greeter
+
+# which_key
+- Helps with key bindinds
+- reacts for space, z, g
+- ` or ' for buffer menu
