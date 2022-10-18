@@ -203,3 +203,8 @@ end`
 - Helps with key bindinds
 - reacts for space, z, g
 - ` or ' for buffer menu
+
+# Copilot
+- C+a to accept
+- alt + [] to cycle through
+- C+] to close suggestion
