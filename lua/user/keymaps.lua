@@ -40,7 +40,8 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Close buffer with vim bbye
-keymap("n", "<leader>b", ":Bdelete<CR>", opts)
+-- Disabled due to Bdelete being matter to <leader> + C(lose buffer) via which-key
+-- keymap("n", "<leader>b", ":Bdelete<CR>", opts)
 
 -- Insert --
 -- Press jk fast to enter
