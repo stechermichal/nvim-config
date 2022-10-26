@@ -74,9 +74,13 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 --[[ keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts) ]]
 
 -- keymap("n", "<leader>f", "<cmd>Telescope find_files<cr>", opts)
-keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
+-- Disabled because this is already mapped to <leader> + f via which-key
+-- keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
 keymap("n", "<c-t>", "<cmd>Telescope live_grep<cr>", opts)
 
 -- nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts )
-keymap("n", "<leader>s", ":Format<cr>", opts)
+-- Disabled because this is already mapped to <leader> + e via which-key
+-- keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts )
+-- Disabled leader s because it is already mapped to <leader> + l + f via which-key
+-- keymap("n", "<leader>s", ":Format<cr>", opts)
+
